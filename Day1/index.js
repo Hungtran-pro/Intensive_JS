@@ -11,20 +11,20 @@
 // if(check) console.log('This is a palindrome');
 // else console.log('This is not palindrome');
 
-let n = prompt("Enter n number in an array you want");
-let array = [];
-for (let i = 0; i < n; i++) {
-  let tmp = prompt("Enter a number");
-  array.push(tmp);
-}
-// let sum = array[0] + array[1];
-// for(let i = 1; i < n - 1; i++){
-//     if(array[i] + array[i+1] > sum) sum = array[i] * array[i+1];
+// let n = prompt("Enter n number in an array you want");
+// let array = [];
+// for (let i = 0; i < n; i++) {
+//   let tmp = prompt("Enter a number");
+//   array.push(tmp);
 // }
-// console.log(array);
-// console.log(sum);
+// // let sum = array[0] + array[1];
+// // for(let i = 1; i < n - 1; i++){
+// //     if(array[i] + array[i+1] > sum) sum = array[i] * array[i+1];
+// // }
+// // console.log(array);
+// // console.log(sum);
 
-let oddNumbers = array.filter(function (item) {
-  return item % 2 == 1;
-});
-console.log(oddNumbers);
+// let oddNumbers = array.filter(function (item) {
+//   return item % 2 == 1;
+// });
+// console.log(oddNumbers);
