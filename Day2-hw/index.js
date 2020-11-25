@@ -51,7 +51,14 @@ class ListStudents {
       index
     ].toHTML();
   }
-  showStudent() {}
+  showStudent() {
+    for (let i = 0; i < this.listStudents.length; i++) {
+      let listInHTML = document.querySelector(".list");
+      let tempStudent = this.listStudents[i].toHTML();
+      console.log(tempStudent);
+      listInHTML.innerHTML += tempStudent;
+    }
+  }
   findAge(age) {
     for (let i = 0; i < this.listStudents.length; i++) {
       if (this.listStudents[i].age === age) {
@@ -79,18 +86,24 @@ class ListStudents {
     console.log(`Số học sinh quê ở Hà Nội là ${countHomeTown}`);
     console.log(`Số học sinh 18 tuổi và quê ở Hà Nội là ${count}`);
   }
-  findStudentsByName(fname, lname){
-    for(let i = 0; i < this.listStudents.length; i++){
-        if(this.listStudents[i].fname === fname && this.listStudents[i].lname === lname){
-            this.showIndexOfStudent(i);
-        }
+  findStudentsByName(fname, lname) {
+    for (let i = 0; i < this.listStudents.length; i++) {
+      if (
+        this.listStudents[i].fname.toLowerCase() === fname.toLowerCase() &&
+        this.listStudents[i].lname.toLowerCase() === lname.toLowerCase()
+      ) {
+        this.showIndexOfStudent(i);
+      }
     }
   }
 }
 
 let listStudents = new ListStudents();
 const student1 = new Students("12A2", "hung", "tran", 15, "HaNoi");
+const student2 = new Students("10A2", "A", "B", 15, "HaNoi");
 listStudents.addStudent(student1);
-listStudents.showStudent();
+listStudents.addStudent(student2);
 listStudents.findAge18();
-listStudents.findStudentsByName('hung', 'tran');
+// listStudents.findStudentsByName("HUng", "tran");
+listStudents.showStudent();
+// console.log(document.querySelector(".list").innerHTML);
