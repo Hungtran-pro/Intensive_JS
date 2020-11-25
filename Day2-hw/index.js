@@ -22,15 +22,14 @@ class Students {
   //       return this.hometown.toLowerCase();
   //   }
   toHTML() {
-    return `<div class = "container">
-            <div class="inforStudent">
-                <div>${this.classname}</div>
-                <div>${this.fname}</div>
-                <div>${this.lname}</div>
-                <div>${this.age}</div>
-                <div>${this.hometown}</div>
+    return `<tr>
+                <td>${this.classname}</td>
+                <td>${this.fname}</td>
+                <td>${this.lname}</td>
+                <td>${this.age}</td>
+                <td>${this.hometown}</td>
             </div>
-        </div>
+        <tr>
         `;
   }
 }
@@ -101,8 +100,12 @@ class ListStudents {
 let listStudents = new ListStudents();
 const student1 = new Students("12A2", "hung", "tran", 15, "HaNoi");
 const student2 = new Students("10A2", "A", "B", 15, "HaNoi");
+const student3 = new Students("12A2", "C", "D", 18, "HaNoi");
+const student4 = new Students("10A2", "E", "F", 18, "HaNoi");
 listStudents.addStudent(student1);
 listStudents.addStudent(student2);
+listStudents.addStudent(student3);
+listStudents.addStudent(student4);
 listStudents.findAge18();
 // listStudents.findStudentsByName("HUng", "tran");
 listStudents.showStudent();

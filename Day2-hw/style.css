@@ -1,0 +1,9 @@
+.list {
+    border: #f09952 solid 1px;
+    margin: auto;
+    font-size: 36px;
+}
+
+tr, td, th {
+    border: #f09952 solid 1px;s
+}
