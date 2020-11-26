@@ -2,7 +2,7 @@ function helloByVN() {
   console.log("Xin Chào");
 }
 
-export function helloByThaiLand() {
+export default function helloByThaiLand() {
   console.log("Xa Qua Di Cap");
 }
 

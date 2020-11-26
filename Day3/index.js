@@ -1,4 +1,5 @@
-import {helloByVN, helloByThaiLand} from './myModule.js'
+import * as hello from './myModule.js'
+import './btn.js'
 
-helloByVN();
-helloByThaiLand();
+hello.helloByVN();
+// hello.helloByThaiLand();
