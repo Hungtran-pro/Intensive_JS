@@ -59,7 +59,7 @@
 // const myTiger = new Animal('an thit', 'vang', 4, 'male', 'meo')
 // console.log(myTiger)
 
-// // static method
+// static method
 // class MyMath{
 //   static sum(a, b) {
 //     return a + b
@@ -71,7 +71,7 @@
 // console.log(MyMath.sum(1,2))
 // console.log(Math.ceil(1.2))
 
-// ke thua
+// Ke thua
 
 // class Employee extends Person{
 //   salary;
