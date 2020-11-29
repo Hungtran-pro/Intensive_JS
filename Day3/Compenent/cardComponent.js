@@ -21,16 +21,16 @@ const style = `
         text-align: center;
     }
     </style>
-`
+`;
 
 class CardComponent extends HTMLElement {
   constructor() {
     super();
     //khai bao shadow_dom
     this._shadowDom = this.attachShadow({ mode: "open" });
-    this.imgSrc = this.getAttribute('imgSrc');
-    this.tle = this.getAttribute('tle');
-    this.description = this.getAttribute('dcrp');
+    this.imgSrc = this.getAttribute("imgSrc");
+    this.tle = this.getAttribute("tle");
+    this.description = this.getAttribute("dcrp");
     this._shadowDom.innerHTML = `
         ${style}
         <div class="card">
@@ -43,4 +43,4 @@ class CardComponent extends HTMLElement {
         `;
   }
 }
-window.customElements.define('card-container', CardComponent);
+window.customElements.define("card-container", CardComponent);
