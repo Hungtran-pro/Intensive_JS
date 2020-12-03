@@ -1,13 +1,9 @@
-function DogObject(name, age) {
-    let dog = Object.create(constructorObject);
-    dog.name = name;
-    dog.age = age;
-    return dog;
+class X {
+  name;
+  constructor(name){
+    this.name = name;
+  }
 }
-let constructorObject = {
-    speak: function(){
-        return "I am a dog"
-    }
-}
-let bingo = DogObject("Bingo", 54);
-console.log(bingo);
+
+let Y = new X("hung");
+console.log(Y.name);
