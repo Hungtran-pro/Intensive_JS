@@ -1,1 +1,1 @@
-import SchoolManager from "./SchoolManager.js";
+import ClassManager from "./ClassManager.js";
