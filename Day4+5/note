@@ -1,0 +1,33 @@
+WebComponent
+
+- Idea ~ React
+- Reusable
+- Lifecycle: 
+    + Sinh ra: Mount
+    + Phát triển: Update
+    + Mất đi: Unmount
+
+Firebase ~ Server
+- Học về Cloud FireStore
+
+Data model(Schema)
+- SQL: 
+    + Sử dụng SQL để truy vấn dữ liệu
+    + Lưu trữ dữ liệu dưới dạng table
+- No-SQL
+    + Lưu trữ dữ liệu dưới dạng Docs, Key-value, no4j(dạng đồ thị)
+- MongoDB
+
+Cloud Firestore:(Kiểu lưu)
+- root:
+    - collection 1:
+        - doc 1
+        - doc 2
+    - collection 2:
+        - doc 1
+        - doc 2
+    ...
+
+Lưu ý:
+chuyển từ object, aray -> string JSON.stringify(object, array)
+chuyển từ string(json) -> object, array JSON.parset(string)

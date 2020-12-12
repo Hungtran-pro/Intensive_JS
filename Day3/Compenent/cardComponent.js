@@ -43,4 +43,5 @@ class CardComponent extends HTMLElement {
         `;
   }
 }
+
 window.customElements.define("card-container", CardComponent);

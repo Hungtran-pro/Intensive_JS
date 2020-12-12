@@ -1,0 +1,45 @@
+Thao tác với firestore;
+
+- firebase.firestore().collection("users").<tên thao tác>
+
+Đồng bộ(Sync): 
+
+- Ex: ListJobs: A B C D.
+
+A -> B -> C -> D(Just run the current task when a previous task is completed)
+
+
+Bất đồng bộ(Async):
+
+A -> B -> C -> D(Can run a task without the completion of other tasks)
+
+Xử lí bất đồng bộ:
+- Ép cho về đồng bộ.
+
+Async xuất hiện khi cta sử dụng: 
+    + setTimeout
+    + setInterval
+    + load dữ liệu(từ bên ngoài)
+
+{ callback < promise < async/await }
+-----------------------------------------------
+Quy trình phát triển Software Engineering
+
+Dev Ops
+5 pha:
+- Đặc tả yêu cầu(Ý tưởng)
+- Phân tích yêu cầu
+- Thiết kế
+- 
+
+EX:
+
+Người dùng:
+- Bấm vào đường link
+- Chọn môn
+
+Ứng Dụng:
+- Hiện thị danh sách (họ tên, MSV, ...)
+- Kiểm tra điều kiện
+
+-----------------------------------------------

@@ -19,7 +19,7 @@ $template.innerHTML = /*html*/ `
         }
     </style>
     <div id="item-container">
-        <img id="image" src="https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg" >
+        <img id="image" src="" >
         <div id="price">10 &#8363;</div>
         <div id="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
         <div id="address">Hà Nội </div> 
@@ -27,17 +27,21 @@ $template.innerHTML = /*html*/ `
 `;
 
 export default class ItemContainer extends HTMLElement {
-  constructor() {
+  constructor(image, price, description, address) {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild($template.content.cloneNode(true));
+    this.setAttribute('image', image);
+    this.setAttribute('price', price);
+    this.setAttribute('description', description);
+    this.setAttribute('address', address);
   }
   // Định nghĩa những thuốc tính có ảnh hưởng đến nội dung
   static get observedAttributes() {
     return ["image", "price", "description", "address"];
   }
 
-  // được chạy khi giá trị thuộc tính thay đổi
+  // Được chạy khi giá trị thuộc tính thay đổi
   attributeChangedCallback(attrName, oldValue, newValue) {
     console.log(attrName + " = " + newValue);
     switch (attrName) {
