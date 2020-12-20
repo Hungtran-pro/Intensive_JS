@@ -1,0 +1,39 @@
+Single page app:
+    Là 1 ứng dụng web giúp nâng cao trải nghiệm người dùng bằng cách sử dụng HTML5 và AJAX.
+    Đầu tiên khi tải một trang web bất kì, SPA sẽ tải một trang web HTML đơn, sau đó dựa trên
+    user's request, SPA sẽ tiếp tục tải các HTML khác trong cùng 1 trang đó, SPA có thể sử dụng
+    vài thư viện JS như AngularJS, backbone.js, Durandal...
+
+
+SEO (Search engine optimization)
+
+Sự khác khau giữa SPA và MPA:
+ - SPA:
+    + works inside a browser and does not require page reloading during use
+    + Serving an outstanding UX by trying to imitate a "natural" environment in the browser.
+      no page reloads, no extra wait time.
+    + Heavily depends on JS when loading all other contents.
+    + requests a markup and data independently and renders pages straight in the browser.
+    + comfortable web space, simple, easy and workable fashion.
+    PROS:
+      + fast, as most resources are only loaded once throughout the lifespan of app.
+      + the development is simplified and streamlined
+      + easy to debug
+      + easier to make a mobile application coz of reusing the same backend code.
+      + can cache any local storage effectively, can use even when offline.
+    CONS:
+      + not easy to make SEO.
+      + It is slow to download coz heavy client frameworks are required.
+      + less secure.
+      + make system slow down.
+
+ - MPA:
+    + display the data or submit data back to server requests redering a new page.
+    + bigger then SPA.
+    + have many levels of UI.
+    + more difficult to develope than SPA
+    PROS:
+      + visual map
+      + easy for SEO manager.
+    CONS:
+      + 

@@ -1,0 +1,6 @@
+ChatApp:
+- Đăng kí, đăng nhập
+- Chat
+- Quản lí bạn bè:
+    + Kết bạn
+    + Xem danh sách người online
